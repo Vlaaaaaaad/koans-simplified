@@ -5,7 +5,7 @@ class AboutArrayAssignment < Neo::Koan
   # TODO
   def test_non_parallel_assignment
     names = ["John", "Smith"]
-    assert_equal __, names
+    assert_equal ["John", "Smith"], names
   end
 
   # TODO
@@ -13,7 +13,7 @@ class AboutArrayAssignment < Neo::Koan
     first_name = "Roy"
     last_name = "Rob"
     first_name, last_name = last_name, first_name
-    assert_equal __, first_name
-    assert_equal __, last_name
+    assert_equal "Rob", first_name
+    assert_equal "Roy", last_name
   end
 end
