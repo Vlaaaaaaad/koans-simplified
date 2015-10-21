@@ -17,22 +17,6 @@ class AboutMethods < Neo::Koan
     assert_equal __, result
   end
 
-  # TODO
-  # (NOTE: We are Using eval below because the example code is
-  # considered to be syntactically invalid).
-  def test_sometimes_missing_parentheses_are_ambiguous
-    eval "assert_equal 5, my_global_method 2, 3" # ENABLE CHECK
-    #
-    # Ruby doesn't know if you mean:
-    #
-    #   assert_equal(5, my_global_method(2), 3)
-    # or
-    #   assert_equal(5, my_global_method(2, 3))
-    #
-    # Rewrite the eval string to continue.
-    #
-  end
-
   # ------------------------------------------------------------------
 
   # TODO
@@ -54,7 +38,6 @@ class AboutMethods < Neo::Koan
 
   # TODO
   def test_calling_with_variable_arguments
-    assert_equal __, method_with_var_args.class
     assert_equal __, method_with_var_args
     assert_equal __, method_with_var_args(:one)
     assert_equal __, method_with_var_args(:one, :two)
@@ -94,11 +77,6 @@ class AboutMethods < Neo::Koan
   # TODO
   def test_calling_methods_in_same_class
     assert_equal __, my_method_in_the_same_class(3,4)
-  end
-
-  # TODO
-  def test_calling_methods_in_same_class_with_explicit_receiver
-    assert_equal __, self.my_method_in_the_same_class(3,4)
   end
 
   # ------------------------------------------------------------------

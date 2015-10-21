@@ -19,24 +19,11 @@ class AboutSymbols < Neo::Koan
     symbol1 = :a_symbol
     symbol2 = :a_symbol
 
-    assert_equal __, symbol1           == symbol2
-    assert_equal __, symbol1.object_id == symbol2.object_id
+    assert_equal __, symbol1 == symbol2
   end
 
   def test_symbols_can_be_made_from_strings
     string = "catsAndDogs"
     assert_equal __, string.to_sym
-  end
-
-  def test_symbols_with_spaces_can_be_built
-    symbol = :"cats and dogs"
-
-    assert_equal __.to_sym, symbol
-  end
-
-  def test_symbols_are_not_strings
-    symbol = :ruby
-    assert_equal __, symbol.is_a?(String)
-    assert_equal __, symbol.eql?("ruby")
   end
 end

@@ -19,37 +19,12 @@ class AboutControlStatements < Neo::Koan
     assert_equal __, result
   end
 
-  def test_if_statements_return_values
-    value = if true
-              :true_value
-            else
-              :false_value
-            end
-    assert_equal __, value
-
-    value = if false
-              :true_value
-            else
-              :false_value
-            end
-    assert_equal __, value
-
-    # NOTE: Actually, EVERY statement in Ruby will return a value, not
-    # just if statements.
-  end
 
   def test_if_statements_with_no_else_with_false_condition_return_value
     value = if false
               :true_value
             end
     assert_equal __, value
-  end
-
-  def test_if_statement_modifiers
-    result = :default_value
-    result = :true_value if true
-
-    assert_equal __, result
   end
 
   def test_unless_statement
@@ -72,27 +47,6 @@ class AboutControlStatements < Neo::Koan
     result = :default_value
     result = :false_value unless false
 
-    assert_equal __, result
-  end
-
-  def test_while_statement
-    i = 1
-    result = 1
-    while i <= 10
-      result = result * i
-      i += 1
-    end
-    assert_equal __, result
-  end
-
-  def test_break_statement
-    i = 1
-    result = 1
-    while true
-      break unless i <= 10
-      result = result * i
-      i += 1
-    end
     assert_equal __, result
   end
 

@@ -20,12 +20,6 @@ class AboutStrings < Neo::Koan
   end
 
   # TODO
-  def test_use_double_quotes_to_create_strings_with_single_quotes
-    string = "Don't"
-    assert_equal __, string
-  end
-
-  # TODO
   def test_plus_will_concatenate_two_strings
     string = "Hello, " + "World"
     assert_equal __, string

@@ -36,18 +36,4 @@ class AboutExceptions < Neo::Koan
     assert_equal __, result
     assert_equal __, ex.message
   end
-
-  def test_ensure_clause
-    result = nil
-    begin
-      fail "Oops"
-    rescue StandardError
-      # no code here
-    ensure
-      result = :always_run
-    end
-
-    assert_equal __, result
-  end
-
 end

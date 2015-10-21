@@ -11,12 +11,6 @@ class AboutModules < Neo::Koan
     end
   end
 
-  def test_cant_instantiate_modules
-    assert_raise(___) do
-      Nameable.new
-    end
-  end
-
   # ------------------------------------------------------------------
 
   class Dog

@@ -9,13 +9,6 @@ class AboutArrayAssignment < Neo::Koan
   end
 
   # TODO
-  def test_parallel_assignments
-    first_name, last_name = ["John", "Smith"]
-    assert_equal __, first_name
-    assert_equal __, last_name
-  end
-
-  # TODO
   def test_swapping_with_parallel_assignment
     first_name = "Roy"
     last_name = "Rob"
